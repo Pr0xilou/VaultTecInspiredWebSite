@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About - VAULT TEC</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+				<li><a href="Ordernow.html">Order Now</a></li>	
+			</ul>
+		</nav>
+		<img src="images/menu.png" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+<!--------------about----------->
+<section class="about" id="about">
+	
+	<h1 class="heading"> <span> About</span> Us </h1>
+	
+	<div class="row2">
+		
+		<div class="image">
+			<img src="images/vaulttec.png">
+		</div>
+		
+		<div class="content2">
+			<h3>What is Vault Tec?</h3>
+			<p>Vault-Tec is an organization that prepares human's survivability if nuclear warfare were to happen by providing Vaults to the people underground where they can be safe from nuclear war and its nasty effect on human lives.<p>
+			<p style="color:#090a0a"> This project is heavily influenced by Fallout video game series.<p>
+		</div>
+	</div>
+</section>
+	
+<!--------------toggle menu----------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+		else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>
